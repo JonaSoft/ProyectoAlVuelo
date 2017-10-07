@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Report Flights</title>
+		<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+   </head>
+	<style>
+		body{
+			background-color: #DE7F12;
+			color: white;
+			}
+	</style>
+	<body>
+		<div class="jumbotron-fluid">
+		<br>
+			<form class="ml-2">
+				<input type="text" size="10" name="busca">
+				<input type="button" name="busca" id="btnBuscar" onclick="funcionBuscar();"value="Start">
+			</form>
+			<hr>
+			<p class="ml-3 text-danger">Detalles</p>
+		</div>
+
+		<script>
+			function funcionBuscar(){
+				alert("Inicializando Busqueda de Data ...");
+			}
+		</script>
+	</body>
+</html>
+<!-- LLAMANDO FUNCION DESDE JS con getElementById y onclick INVOCANDO A FUNCION O CON EJECUCION DIRECTA DE FUNCION
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ATPCO FRECUENCIA</title>
+	</head>
+	<body>
+		<h1>ATPCO FRECUENCIA CODE SHARE</h1>
+		<input type="button" id="btnFuncion1" value="Llamando CodeShare desde HTML con onclick">
+		<input type="button" id="btnFuncion2" value="Llamando CodeShare desde JS con click">
+		<script>
+			var btn1=document.getElementById("btnFuncion1");
+			var btn2=document.getElementById("btnFuncion2");
+			btn1.onclick=descarga;//LLAMADO A FUNCION DESCARGA
+			btn2.onclick=function(){//LLAMADO A FUNCION DIRECTAMENTE
+				alert('Iniciando desde JS por funcion DESCARGA para Codeshare');
+}
+			function descarga(){
+			alert('LLamando a flight por medio de funcion DESCARGA en JS')
+}
+		</script>
+	</body>
+</html>
+-->
+
+<!--INVOCANDO A FUNCION Y LLAMADO DIRECTO CON ADDEVENTLISTENER
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Depuracion Data Code Share</title>
+	</head>
+	<body>
+		<h1>Depuracion Data Code Share</h1>
+		<input type="button" id="btnFuncion1" value="Iniciando Descarga">
+		<input type="button" id="btnFuncion2" value="Iniciando Descarga">
+	<script>
+		var btn1=document.getElementById("btnFuncion1");
+		var btn2=document.getElementById("btnFuncion2");
+		btn1.addEventListener("click",funcionCs,false);
+		btn2.addEventListener("click", function(){
+			alert('Evento ejecutado desde funcion directa');
+		},false)
+		function funcionCs(){
+			alert('Evento desde invocacion a funcion "funcionCs"');
+}
+	</script>
+	</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<h1>Busqueda de Vuelos por fecha</h1>
+	<input type="text" id="idTexto" value="">
+	<button type="button" id="btnget"onclick="funcionGet();">Iniciar Busqueda requerida...</button>
+	<script>
+		function funcionGet(){
+			var textoget;
+			textoget=document.getElementById('idTexto').value;
+			if (textoget==""){
+				alert('Sin valor alguno en cuadro de texto');
+			}else {
+					alert(textoget);
+			}
+}
+	</script>
+	</body>
+</html>
+-->
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos</title>
+	</head>
+	<body>
+		<h1 onclick="cambiar(this)">Manejadores con Funciones Externas no recomendado mezcla HTML y JS"</h1>
+	<script>
+		function cambiar(elem){
+			elem.innerHTML='Fox y Load desde Oscar';
+		}
+	</script>
+	<a href="http://www.google.com" onclick="return preguntar();">Pulsas para
+ 	ir a Google</a>
+	<script>
+		function preguntar(){
+			return confirm('De verdad quieres ir a Google?');
+		}
+	</script>
+	</body>
+</html>
+-->
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>Añadiendo nuevo registro Code share</h1>
+		<script>
+			function creaVentana(){
+				miventana=window.open('','Code Share','width=450,height=200');
+				miventana.document.write('<h2>Nuevo registro Code Share</h2>');
+				miventana.moveTo(5,15);
+				document.getElementById('crea').disabled=true;
+
+			}
+			function cierraVentana(){
+				miventana.close();
+				document.getElementById('crea').disabled=false;
+			}
+			function moverVentana(){
+				miventana.moveTo(10,10);
+			}
+		</script>
+		<button id="crea"onclick="creaVentana()">Nuevo Registro</button>
+		<button onclick="moverVentana()">Moviliza Ventana</button>
+		<button onclick="cierraVentana()">Finalizar Registro</button>
+	</body>
+</html>
+-->

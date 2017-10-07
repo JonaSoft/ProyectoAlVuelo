@@ -1,0 +1,73 @@
+.slider{
+  /*background: url("img/jchavez.jpg");*/
+  /*background: url("img/acuerdo.jpg");*/
+  background-size:cover;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+
+}
+.columna{
+  border:1px #313030 solid;
+}
+.medida{
+  height: 110px;
+  width: 200px;
+
+}
+
+
+.fondomain{
+  background: url("../img/avion5.jpg");
+  background-size:cover;
+  background-position: center center;
+  height: 700px;
+  width: 100%;
+}
+p{
+  font-size:0.9rem;
+}
+h4{
+   text-align: center;
+}
+.fondofooter1{
+  /*background: url("img/jchavez.jpg");*/
+  background: url("img/iata2.bmp");
+  background-size:cover;
+  background-position: center;
+  height:200px;
+  width: 80%;
+}
+
+.fondofooter2{
+  /*background: url("img/jchavez.jpg");*/
+  background: url("img/the_team_asi.jpg");
+  background-size:cover;
+  background-position: center;
+  height:200px;
+  width: 80%;
+}
+
+.fondofooter3{
+  /*background: url("img/jchavez.jpg");*/
+  background: url("img/acuerdo.jpg");
+  background-size:cover;
+  background-position: center;
+  height:200px;
+  width: 80%;
+}
+.footerfinal{
+	background-color:#151515;
+	opacity:0.90;
+	height:30px;
+}
+.caja{
+   /*border: 2px dotted black;*/
+   /*width: 600px;
+   height: 400px;*/
+   background-color: #F7BE81;
+   opacity:0.5;
+   /*display: none;*/
+   position:relative;
+   margin: auto;
+}
