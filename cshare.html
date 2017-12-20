@@ -5,33 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+    <title>Desarrollo ASI</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script>
-         $(document).ready(function(){
-               $("#contenido").hide().fadeIn(3000);
-               document.getElementById("logo").onmouseover=cambiaColor;
-               document.getElementById("logo").onmouseout=restauraColor;
-               //document.getElementById("logo")addEventListener("click",cambiaColor,false);
-               //document.getElementById("logo")addEventListener("click",restauraColor,false);
-            });
-               function cambiaColor(){
-                  //tamDefecto=$(".text-danger").css("font-size");
-                  //tamDefecto=parseInt(tamDefecto);// convierte a entero
-                  //$(".text-danger").css("font-size",tamDefecto*2);
-                  $("#logo").css('color','#FAFAFA');
-               }
-               function restauraColor(){
-                  //var tamDefecto=$(".text-danger").css("font-size");
-                  //tamDefecto=parseInt(tamDefecto);// convierte a entero
-                  //$(".text-danger").css("font-size",tamDefecto/2);
-                   $("#logo").css('color','#FE2E2E');
-               }
-    </script>
-   </head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+     </head>
    <style media="screen">
-       #slogan{
+      #slogan{
          animation:animando 4s;
        }
       @-webkit-keyframes animando{
@@ -46,25 +30,25 @@
    </style>
   <body>
     <div id="contenido" class="container-fluid col-lg-12 col-md-12 col-sm-12">
-      <div class="row"style="">
+      <div class="row">
     <!--CONTENEDOR DEL NAVEGADOR-->
-        <div class="container-fluid fixed-top slider col">
+        <div class="container-fluid  slider col">
             <!--MENU DE NAVEGACION-->
-            <div class="container-fluid fixed-top col"style="background-color:#0B3861;opacity:0.90;">
+            <div class="container-fluid  col"style="background-color:#0B3861;opacity:0.90;">
                 <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse container-fluid" style="background-color:#0B3861;">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="navbar-brand" href="#">
                       <!--CLASS ROUDED-CIRCLE ES PARA PONER IMAGEN CON FORMA CIRCULAR-->
-                     <span class="text-white">ASI Information Support</span></a>
+                     <span style="color:white;font-family:verdana;font-size:17px;">ASI Information Support Assistance</span></a>
                      <!--<h1 class="ml-2 text-whiter"> A S I</h1></a>-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link active ml-2 r" href="#"><h6><strong>Views</strong></h6></a>
-                            <a class="nav-item nav-link ml-2" href="#"><h6><strong>Transit</strong></h6></a>
-                            <a class="nav-item nav-link ml-2" href="#"><h6><strong>Tools</strong></h6></a>
-                            <div><a id="winBuscar"class="btn btn-danger ml-2" href="#"><h6><strong>Search</strong></h6></a></div>
+                            <a class="nav-item nav-link active ml-2 r" href="#">Views</a>
+                            <a class="nav-item nav-link ml-2" href="#">Transit</a>
+                            <a class="nav-item nav-link ml-2" href="#">Tools</a>
+                            <div><a id="winBuscar"class="btn btn-danger ml-2" href="#">Search</a></div>
                         </div>
                     </div>
                 </nav>
@@ -78,20 +62,33 @@
 
     <div class="row">
          <div class="container-fluid fondomain col d-flex justify-content-center d-flex align-items-center ">
-             <div id="slogan"class="text-center text-muted" >
-                <div id="sponsor"class="display-4">
-                  <span id="logo" style="font-size:40px;color:#FE2E2E;text-shadow: 2px 2px 2px #585858"><strong>Web Site Code Share</strong></span>
+
+            <div id="slogan"class="text-muted  col d-flex justify-content-center">
+               <div id="sponsor" style="height:200px;">
+                 <span id="logo" class="titulo"style="cursor:pointer;font-size:3rem;font-family: Arial;color:#FE2E2E;text-shadow: 3px 4px 5px #585858;"><strong>Web Site Code Share</strong></span><br>
+                 <div id="flecha"class=" col d-flex justify-content-center" style="cursor:pointer;margin-top:50px;opacity:0.50;">
+                    <img src="img/down.png" width="90" height="30"alt="">
+                 </div>
                </div>
             </div>
-          </div>
+            <section class="container-fluid"style="width:100px; height:80px;margin-top:-600px;">
+               <div  class="papelera mover container-fluid col d-flex justify-content-left">
+                  <img src="img/trash.png" width="100%" alt="" style="opacity:0.85;">
+               </div>
+            </section>
+            <br>
+
+         </div>
+
     </div>
+
    </section>
     <!--FIN SLIDER-->
     <!--INICIO FOOTER-->
-    <div id="piePagina"class="row container-fluid "style="background-color:#E5E5F0;">
+    <div id="piePagina"class="row container-fluid "style="background-color:#151515;">
       <!--1era COLUMNA-->
         <div class="container-fluid p-2 text-primary col-xl-4 col-lg-4 col-md-4 col-sm-1">
-            <h4>IATA Industry</h4>
+            <h5>IATA Industry</h5>
             <!--1RA FILA 1era COLUMNA-->
             <div class="row align-items-center justify-content-center">
                   <div class="text-center">
@@ -101,7 +98,7 @@
             <!--2DA FILA 1era COLUMNA-->
             <div class="row align-items-center justify-content-center">
                 <div class="col">
-                     <p class="text-muted p-2">From 57 founding members in 1945, IATA now represents some 275 airlines in over 117 countries.
+                     <p class="text-white p-2">From 57 founding members in 1945, IATA now represents some 275 airlines in over 117 countries.
                      Carrying 83% of the world’s air traffic, IATA members include the world’s leading passenger and cargo airlines.
                      IATA membership is open to airlines operating scheduled and non-scheduled air services that maintain an IATA Operational
                      Safety Audit (IOSA) registration.
@@ -113,7 +110,7 @@
         <!--FIN 1era COLUMNA-->
         <!--2DA COLUMNA-->
         <div class="container p-2 text-primary col-xl-4 col-lg-4 col-md-4 col-sm-1">
-            <h4>About Us?</h4>
+            <h5>About Us?</h5>
             <!--1RA FILA 2DA COLUMNA-->
             <div class="row align-items-center justify-content-center">
                 <div class="text-center">
@@ -123,7 +120,7 @@
             <!--2DA FILA 2DA COLUMNA-->
             <div class="row align-items-center justify-content-center">
                 <div class="col">
-                    <p class="text-muted p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    <p class="text-white p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                         consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                     </p>
                 </div>
@@ -133,7 +130,7 @@
         <!--3RA COLUMNA-->
 
         <div class="container p-2 text-primary col-xl-4 col-lg-4 col-md-4 col-sm-1">
-              <h4>Contact Us</h4>
+              <h5>Contact Us</h5>
               <!-- 1era FILA 3RA COLUMNA-->
               <div class="row align-items-center justify-content-center">
                   <div class="text-center">
@@ -143,10 +140,10 @@
               <!-- 2da FILA 3RA COLUMNA-->
               <div class="row align-items-center justify-content-center">
                 <div class="col">
-                  <div class="text-muted p-2 text-center">
-                      <p class="text-muted"> Address: Av. Grau 271. Miraflores Lima-Perú</p>
-                      <o class="text-muted">Email: <a href="#">  asi@miatech.com</a></p>
-                      <p class="text-muted">Phone: 241-7000 anex 242</p>
+                  <div class="text-white p-2 text-center">
+                      <p> Address: Av. Grau 271. Miraflores Lima-Perú</p>
+                      <p>Email: <a href="#">  asi@miatech.com</a></p>
+                      <p>Phone: 241-7000 anex 242</p>
                   </div>
                 </div>
               </div>
@@ -156,8 +153,8 @@
       <!--FIN FOOTER-->
       <!--INICIO FOOTER2-->
       <div class="row container-fluid align-items-center footerfinal";>
-          <div class="container-fluid  d-flex align-items-center">
-              <a class="align-bottom text-white"> &#169 Copyright - 2017</a>
+          <div class="col">
+              <p class="align-bottom text-right text-muted"> &#169 Copyright Asi 2017. All Rights reserved.</p>
           </div>
 
       </div>
@@ -167,6 +164,6 @@
     <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <!--<script src="js/app.js"></script>-->
   </body>
 </html>
